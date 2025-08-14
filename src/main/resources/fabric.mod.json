@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "skyuphelper",
+	"version": "${version}",
+	"name": "SkyUp helper",
+	"description": "Eksperymentalny mod mający ułatwić rozgrywkę na serwerze skyup.pl",
+	"authors": [
+		"Galgan!"
+	],
+	"contact": {
+		"homepage": "https://github.com/Galgan05",
+		"sources": "https://github.com/Galgan05/SkyUpHelper-1.21.4"
+	},
+	"license": "MIT",
+	"icon": "assets/skyuphelper/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.galgan.skyuphelper.SkyUpHelper"
+		],
+		"fabric-datagen": [
+			"net.galgan.skyuphelper.SkyUpHelperDataGenerator"
+		],
+        "client": [
+            "net.galgan.skyuphelper.SkyUpHelperClient"
+        ]
+	},
+	"mixins": [
+		"skyuphelper.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.17.2",
+		"minecraft": "~1.21.4",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
