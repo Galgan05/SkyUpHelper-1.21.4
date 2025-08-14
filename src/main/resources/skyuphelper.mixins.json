@@ -2,9 +2,9 @@
 	"required": true,
 	"package": "net.galgan.skyuphelper.mixin",
 	"compatibilityLevel": "JAVA_21",
-	"mixins": [
-		"ExampleMixin"
-	],
+    "client": [
+      "HandledScreenAccess"
+    ],
 	"injectors": {
 		"defaultRequire": 1
 	},
